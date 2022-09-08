@@ -25,7 +25,7 @@ body {
   font-weight: 300;
   color: hsl(0deg, 0%, 59%);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   margin-bottom: 0.8rem;
 }
@@ -38,17 +38,18 @@ body {
 .subscribe {
   color: hsl(209deg, 33%, 12%);
   text-align: center;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   font-size: 1rem;
 }
 
 #email,
 #email:active,
 #email:focus {
-  border-radius: 1.1rem;
-  padding: 1rem 1.8rem;
+  border-radius: 42px;
+  padding: 16px 1.8rem;
   border: 1px solid hsla(0deg, 0%, 59%, 0.2);
-  font-size: family;
+  height: 50px;
+  font-family: inherit;
   width: 100%;
 }
 #email::placeholder,
@@ -56,16 +57,38 @@ body {
 #email:focus::placeholder {
   color: hsla(0deg, 0%, 59%, 0.2);
 }
+#email.error, #email.error:focus, #email.error:active,
+#email:active.error,
+#email:active.error:focus,
+#email:active.error:active,
+#email:focus.error,
+#email:focus.error:focus,
+#email:focus.error:active {
+  outline: 1px solid hsl(354deg, 100%, 66%);
+}
+
+.error__message {
+  color: hsl(354deg, 100%, 66%);
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  display: none;
+}
 
 .submit__email {
   background-color: hsl(223deg, 87%, 63%);
   border: none;
   color: white;
-  padding: 1rem 1.8rem;
-  border-radius: 1.1rem;
-  box-shadow: 0 1px 12px hsl(223deg, 100%, 88%);
+  height: 50px;
+  border-radius: 42px;
+  box-shadow: 0 5px 24px hsla(223deg, 87%, 70%, 0.3);
   font-family: inherit;
   font-weight: 700;
+  cursor: pointer;
+}
+.submit__email:hover {
+  background-color: hsl(223deg, 87%, 70%);
 }
 
 .img__dashboard {
@@ -111,7 +134,7 @@ body {
   border-radius: 50%;
   text-decoration: none;
   border: 1px solid hsla(0deg, 0%, 59%, 0.2);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .subscribe__bar {
@@ -136,6 +159,10 @@ body {
   }
   .input__wrapper {
     width: 68%;
+  }
+  .error__message {
+    text-align: left;
+    margin-left: 3ch;
   }
   .submit__email {
     padding: 0.8rem 2rem;

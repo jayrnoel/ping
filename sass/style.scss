@@ -5,7 +5,8 @@
 }
 $blue: hsl(223, 87%, 63%);
 // ### Secondary
-$pale-blue: hsl(223, 100%, 88%);
+$pale-blue: hsl(223, 87%, 70%);
+$pale-blue-a: hsla(223, 87%, 70%, 30%);
 $light-red: hsl(354, 100%, 66%);
 // ### Neutral
 $gray: hsl(0, 0%, 59%);
@@ -36,7 +37,7 @@ body {
   font-weight: $light;
   color: $gray;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   margin-bottom: 0.8rem;
 }
@@ -47,31 +48,49 @@ body {
 .subscribe {
   color: $very-dark-blue;
   text-align: center;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   font-size: 1rem;
 }
 
 #email,
 #email:active,
 #email:focus {
-  border-radius: 1.1rem;
-  padding: 1rem 1.8rem;
+  border-radius: 42px;
+  padding: 16px 1.8rem;
   border: 1px solid $gray-a;
-  font-size: family;
+  height: 50px;
+  font-family: inherit;
   width: 100%;
   &::placeholder {
     color: $gray-a;
   }
+  &.error,
+  &.error:focus,
+  &.error:active {
+    outline: 1px solid $light-red;
+  }
+}
+.error__message {
+  color: $light-red;
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  display: none;
 }
 .submit__email {
   background-color: $blue;
   border: none;
   color: white;
-  padding: 1rem 1.8rem;
-  border-radius: 1.1rem;
-  box-shadow: 0 1px 12px $pale-blue;
+  height: 50px;
+  border-radius: 42px;
+  box-shadow: 0 5px 24px $pale-blue-a;
   font-family: inherit;
   font-weight: $bold;
+  cursor: pointer;
+  &:hover {
+    background-color: $pale-blue;
+  }
 }
 
 .img__dashboard {
@@ -112,7 +131,7 @@ body {
   border-radius: 50%;
   text-decoration: none;
   border: 1px solid $gray-a;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @import "./mobile";
