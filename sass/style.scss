@@ -31,14 +31,16 @@ body {
 }
 .logo {
   display: block;
+  width: 72px;
+
   margin: 6.2rem auto 3rem;
 }
 .welcome__text {
   font-weight: $light;
   color: $gray;
   text-align: center;
-  font-size: 2rem;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  margin-top: 0.8rem;
   margin-bottom: 0.8rem;
 }
 .bold {
@@ -49,7 +51,7 @@ body {
   color: $very-dark-blue;
   text-align: center;
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 #email,
@@ -75,7 +77,7 @@ body {
   font-style: italic;
   font-size: 0.8rem;
   text-align: center;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
   display: none;
 }
 .submit__email {
@@ -86,7 +88,7 @@ body {
   border-radius: 42px;
   box-shadow: 0 5px 24px $pale-blue-a;
   font-family: inherit;
-  font-weight: $bold;
+  font-weight: $semi-bold;
   cursor: pointer;
   &:hover {
     background-color: $pale-blue;
@@ -115,10 +117,11 @@ body {
 .copyright {
   color: $gray;
   font-size: 0.8rem;
+  text-align: center;
 }
 
 .footer {
-  text-align: center;
+  margin-top: 3rem;
 }
 
 .social__link {

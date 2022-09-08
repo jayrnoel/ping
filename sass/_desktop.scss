@@ -2,6 +2,15 @@
   .container {
     max-width: 650px;
   }
+  .logo {
+    width: 75px;
+  }
+  .welcome__text {
+    font-size: 2.3rem;
+  }
+  .subscribe {
+    font-size: 1rem;
+  }
   .subscribe__bar {
     flex-direction: row;
     justify-content: space-between;
