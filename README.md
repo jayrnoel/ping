@@ -13,7 +13,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-  **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/jayrnoel/ping](https://github.com/jayrnoel/ping)
-- Live Site URL: [Add live site URL here](https://ornate-bublanina-b15a66.netlify.app)
+- Live Site URL: [https://ornate-bublanina-b15a66.netlify.app/](https://ornate-bublanina-b15a66.netlify.app)
 
 ## My process
 
