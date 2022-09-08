@@ -1,6 +1,5 @@
 const email = document.querySelector(".email");
 const errorMsg = document.querySelector(".error__message");
-const form = document.querySelector(".subscribe");
 const submitBtn = document.querySelector(".submit__email");
 const emailRegex =
   /^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i;

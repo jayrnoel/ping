@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/jayrnoel/ping](https://github.com/jayrnoel/ping)
+- Live Site URL: [Add live site URL here](https://ornate-bublanina-b15a66.netlify.app)
 
 ## My process
 
@@ -44,38 +44,41 @@ Users should be able to:
 - SASS
 - Git
 - BEM
+- Browsersync
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I have started to use SASS and Git in this project. I have been using GitHub Desktop app in order to keep track of my repository because I'm not so used to using the command line and it's easier to understand the desktop app for now. I tried a few things like publishing the repo to my github account.
 
-To see how you can add code snippets, see below:
+I also have started to use SASS to write CSS. At first, I started to use an extension and now I am using the command line interface. I find using the command line interface easier in this case since the command I am using is just to watch the SCSS files and compile them to the CSS file. At first, it was confusing since I have forgotten to use partials in my initial setup. I did not have an underscore in my filename to it just created every file but I learned that I needed to use underscore in the filename in order to import the files and not create a new file. Writing in different files has been beneficial for me to know where my code is. It has been easier to find the differences in my mobile and desktop layouts. Where my components are and the layouts are.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I also learned that `:focus` pseudo selector has an outline and not adds border to the focused element. One my the things that stuck to me is that whenever I the error message was displayed even when I changed the border to light red, it doesn't change when the input was focused on. I have also learned that you can use the pseudo selector `:placeholder` in order to change the properties of just the placeholder text.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#email,
+#email:active,
+#email:focus {
+  border-radius: 42px;
+  padding: 16px 1.8rem;
+  border: 1px solid $gray-a;
+  height: 50px;
+  font-family: inherit;
+  width: 100%;
+  &::placeholder {
+    color: $gray-a;
+  }
+  &.error,
+  &.error:focus {
+    outline: 1px solid $light-red;
+  }
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I used JavaScript to validate the email address and to display error messages. I have read a lot of resources in terms of regex but they are hard to write for me so I took a regex from the blog [herewecode.io](https://herewecode.io/blog/email-validation-javascript/) and implemented it on my code.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In this project, I practiced on writing using SASS, Git and writing JavaScript.
 
 ### Useful resources
 

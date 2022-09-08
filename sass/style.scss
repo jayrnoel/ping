@@ -67,8 +67,7 @@ body {
     color: $gray-a;
   }
   &.error,
-  &.error:focus,
-  &.error:active {
+  &.error:focus {
     outline: 1px solid $light-red;
   }
 }

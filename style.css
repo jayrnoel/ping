@@ -58,13 +58,11 @@ body {
 #email:focus::placeholder {
   color: hsla(0deg, 0%, 59%, 0.2);
 }
-#email.error, #email.error:focus, #email.error:active,
+#email.error, #email.error:focus,
 #email:active.error,
 #email:active.error:focus,
-#email:active.error:active,
 #email:focus.error,
-#email:focus.error:focus,
-#email:focus.error:active {
+#email:focus.error:focus {
   outline: 1px solid hsl(354deg, 100%, 66%);
 }
 
