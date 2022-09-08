@@ -1,0 +1,17 @@
+@media (min-width: 720px) {
+  .container {
+    max-width: 650px;
+  }
+  .subscribe__bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .input__wrapper {
+    width: 68%;
+  }
+  .submit__email {
+    padding: 0.8rem 2rem;
+    width: 30%;
+  }
+}

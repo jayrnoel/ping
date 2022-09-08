@@ -3,6 +3,18 @@
 *::before {
   box-sizing: border-box;
 }
+$blue: hsl(223, 87%, 63%);
+// ### Secondary
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+// ### Neutral
+$gray: hsl(0, 0%, 59%);
+$gray-a: hsla(0, 0%, 59%, 20%);
+$very-dark-blue: hsl(209, 33%, 12%);
+// ### Font Sizes
+$light: 300;
+$semi-bold: 600;
+$bold: 700;
 
 body {
   margin: 0;
@@ -11,32 +23,29 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+// ### Components
 .container {
   width: 80%;
   margin: 0 auto;
 }
-
 .logo {
   display: block;
   margin: 6.2rem auto 3rem;
 }
-
 .welcome__text {
-  font-weight: 300;
-  color: hsl(0deg, 0%, 59%);
+  font-weight: $light;
+  color: $gray;
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: 1px;
   margin-bottom: 0.8rem;
 }
-
 .bold {
-  font-weight: 700;
-  color: hsl(209deg, 33%, 12%);
+  font-weight: $bold;
+  color: $very-dark-blue;
 }
-
 .subscribe {
-  color: hsl(209deg, 33%, 12%);
+  color: $very-dark-blue;
   text-align: center;
   margin-top: 0.8rem;
   font-size: 1rem;
@@ -47,53 +56,45 @@ body {
 #email:focus {
   border-radius: 1.1rem;
   padding: 1rem 1.8rem;
-  border: 1px solid hsla(0deg, 0%, 59%, 0.2);
+  border: 1px solid $gray-a;
   font-size: family;
   width: 100%;
+  &::placeholder {
+    color: $gray-a;
+  }
 }
-#email::placeholder,
-#email:active::placeholder,
-#email:focus::placeholder {
-  color: hsla(0deg, 0%, 59%, 0.2);
-}
-
 .submit__email {
-  background-color: hsl(223deg, 87%, 63%);
+  background-color: $blue;
   border: none;
   color: white;
   padding: 1rem 1.8rem;
   border-radius: 1.1rem;
-  box-shadow: 0 1px 12px hsl(223deg, 100%, 88%);
+  box-shadow: 0 1px 12px $pale-blue;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: $bold;
 }
 
 .img__dashboard {
   max-width: 100%;
 }
-
 .socials {
   display: flex;
   justify-content: center;
 }
-
 .social__media {
   list-style-type: none;
   padding-left: 0;
   display: flex;
 }
-
 .social__item + .social__item {
   margin-left: 1rem;
 }
-
 .social__link,
 .social__link:visited {
-  color: hsl(223deg, 87%, 63%);
+  color: $blue;
 }
-
 .copyright {
-  color: hsl(0deg, 0%, 59%);
+  color: $gray;
   font-size: 0.8rem;
 }
 
@@ -110,37 +111,9 @@ body {
   overflow: hidden;
   border-radius: 50%;
   text-decoration: none;
-  border: 1px solid hsla(0deg, 0%, 59%, 0.2);
+  border: 1px solid $gray-a;
   font-size: 0.8rem;
 }
 
-.subscribe__bar {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0;
-}
-
-#email,
-.submit__email {
-  margin: 0.4rem 0;
-}
-
-@media (min-width: 720px) {
-  .container {
-    max-width: 650px;
-  }
-  .subscribe__bar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .input__wrapper {
-    width: 68%;
-  }
-  .submit__email {
-    padding: 0.8rem 2rem;
-    width: 30%;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+@import "./mobile";
+@import "./desktop";
